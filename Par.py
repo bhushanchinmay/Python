@@ -6,8 +6,11 @@ for i in a:
         q.append('(')
         print(q)
     else:
-        q.pop()
-        print(q)
+        try:
+            q.pop()
+            print(q)
+        except Exception:
+            print("Stack Empty")    
 if len(q)==0:
      print("Experssion Have right number of Parenthesis",q)
 else:
